@@ -1,0 +1,58 @@
+*{
+ margin: 0; 
+ padding: 0;
+ box-sizing: border-box;  
+ 
+}
+#result {
+
+    height: 70vh;
+    width: 50vw;
+    background-color: lightgray;
+    margin-left: 400px;
+    margin-top: 80px;
+}
+#myform{
+text-align: center;
+padding: 40px;
+
+}
+#calc{
+
+    background-color: green;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 15px;
+
+
+}
+#res{
+
+    background-color:red;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    font-size: 15px;
+
+}
+label{
+    font-size: 30px;
+}
+#salary{
+
+    height: 30px;
+    text-align: center;
+
+
+}
+h1{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./loan.css">
+</head>
+<body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">Loan Details </h1>
+    <div id="result">
+        
+       <form name="myform" id="myform">
+       <label>Enter Your Salary</label><br><br>
+       <input type="text" name="salary" id="salary" placeholder="Enter Your Salary"><br><br>
+     
+    <p type="text"  > Details :<span id="det" > " " </span></p><br><br>
+
+       <input type="button" id='calc'  value="calculate" onclick="loan()">
+       <input type="reset" id='res' value="Reset" onclick="abc()">
+     
+    </form> 
+
+    </div>
+
+<script>
+
+function loan(){
+
+var salary = parseInt(document.getElementById('salary').value)
+
+ document.getElementById('det').innerHTML = salary;
+
+
+
+
+if (salary > 10000 &&   salary < 15000 ){
+
+document.getElementById('det').innerHTML= ( ' State Bank of India  Loan Amount  Min 25000 To 1 Lakh - Apply Now ' )
+document.getElementById('det').style.color= 'green'
+}
+else if( salary   >=   15000 && salary  < 20000 ){
+
+document.getElementById('det').innerHTML= (' ( HDFC Bank ) Loan Amount  Min 1 Lakh To  5 Lakh - Apply Now ')
+
+}
+else if( salary >=  20000 && salary < 50000 ){
+
+document.getElementById('det').innerHTML= (' ( Bank of Baroda  ) Loan Amount  Min 5 Lakh To  10 Lakh - Apply Now ' )
+
+}
+else if( salary >= 50000 && salary < 100000 ){
+
+document.getElementById('det').innerHTML=(' ( Axis Bank ) Loan Amount  Min 10 Lakh To  25 Lakh - Apply Now  ')
+
+}
+else if( salary >= 100000 && salary < 1000000 ){
+
+document.getElementById('det').innerHTML=(' ( ICICI Bank  ) Loan Amount  Min 25 Lakh To  50 Lakh - Apply Now  ')
+
+}
+else{
+
+    document.getElementById('det').innerHTML=('Your Not Eligible For Loan' )
+}
+
+
+
+}
+
+
+function abc(){
+
+    document.getElementById('det').innerHTML = " ";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
